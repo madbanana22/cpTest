@@ -1,0 +1,5 @@
+.vs
+.cmake
+out
+build
+children_complaining_about_this_shit_not_working
