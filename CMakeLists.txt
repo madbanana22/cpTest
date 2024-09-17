@@ -12,6 +12,8 @@ file (GLOB_RECURSE SRCS "src/*.cpp" "src/*.hpp" "src/*.c" "src/*.h") # haha glob
 
 add_library (cpTest ${SRCS})
 
+target_include_directories (cpTest PRIVATE "include")
+
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET cpTest PROPERTY CXX_STANDARD 20)
 endif()
